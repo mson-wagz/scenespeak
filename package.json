@@ -15,7 +15,7 @@
     "ws": "^8.21.0"
   },
   "scripts": {
-    "dev": "yarn workspace @multi-tv/expo-multi-tv start",
+    "dev": "node init && yarn workspace @multi-tv/expo-multi-tv start",
     "dev:android": "yarn workspace @multi-tv/expo-multi-tv android",
     "dev:ios": "yarn workspace @multi-tv/expo-multi-tv ios",
     "dev:web": "yarn workspace @multi-tv/expo-multi-tv web",
