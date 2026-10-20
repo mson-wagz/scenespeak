@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "EXPO_TV=1 expo start",
+    "start": "node init && EXPO_TV=1 expo start",
     "android": "EXPO_TV=1 expo run:android",
     "ios": "EXPO_TV=1 expo run:ios",
     "web": "expo start --web --port 8082",
-    "dev:web": "expo start --web --port 8082",
+    "dev:web": "node init && expo start --web --port 8082",
     "test": "jest --watchAll",
     "lint": "expo lint",
     "prebuild": "EXPO_TV=1 expo prebuild --clean",

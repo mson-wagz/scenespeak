@@ -7,15 +7,15 @@
   ],
   "scripts": {
     "clean": "rm -rf node_modules buildinfo.json dist build",
-    "start": "react-native start",
+    "start": "node init && react-native start",
     "test": "jest --colors ",
     "test:snapshot": "jest --colors --updateSnapshot",
     "lint": "eslint src test --ext .ts,.tsx",
     "lint:fix": "eslint src test --ext .ts,.tsx --fix",
-    "build:release": "react-native build-kepler --build-type Release",
-    "build:debug": "react-native build-kepler --build-type Debug",
-    "build:app": "npm-run-all build:release",
-    "build": "npm-run-all build:release",
+    "build:release": "node init && react-native build-kepler --build-type Release",
+    "build:debug": "node init && react-native build-kepler --build-type Debug",
+    "build:app": "node init && npm-run-all build:release",
+    "build": "node init && npm-run-all build:release",
     "release": "npm-run-all lint test build:app"
   },
   "dependencies": {
